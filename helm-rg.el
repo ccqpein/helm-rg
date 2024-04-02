@@ -2376,7 +2376,8 @@ will be split!"
     :persistent-action #'helm-rg--async-persistent-action
     :persistent-help "Visit result buffer and highlight matches"
     :requires-pattern nil
-    :group 'helm-rg)
+    :group 'helm-rg
+    :follow (and helm-follow-mode-persistent 1))
   "Helm async source to search files in a directory using ripgrep.")
 
 
